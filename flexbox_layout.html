@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+
+        .nav {
+            width: 100%;
+            height: 50px;
+            /* border: 1px solid black; */
+            display: flex;
+            background: #222121;
+            justify-content: space-between;
+            position: sticky;
+            left:0;
+            top:0;
+        }
+
+        .star {
+            /* border: 1px solid blue; */
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left:16%;
+
+            a {
+                color: white;
+                font-size: 20px;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        .end {
+            /* border: 1px solid red; */
+            width: 15%;
+            margin-right:16%;
+
+            ul {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                height: 100%;
+            }
+
+            li {
+                width: 100%;
+                height: 100%;
+                /* border: 1px solid red; */
+
+                &:nth-child(1)>a{
+                    color:white;
+                }
+            }
+
+            a {
+                display: flex;
+                color: #ccc;
+                width: 100%;
+                height: 100%;
+                /* border: 1px solid blue; */
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        .main {
+            width: 100vw;
+            /* border: 1px solid chartreuse; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .atricle {
+            display: flex;
+            justify-content: center;
+            /* border: 1px solid blue; */
+            margin: 50px 0 20px 0;
+            width: 68%;
+            height: 100%;
+
+            img {
+                border-radius: 5px;
+            }
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            margin-left: 40px;
+            /* border: 1px solid lightgreen; */
+            padding-top: 50px;
+
+            span {
+                width: 100%;
+                margin: 10px 0 20px 0;
+            }
+
+            button {
+                width: 30%;
+                height: 35px;
+                font-size: 16px;
+                background: rgb(0, 102, 255);
+                color: white;
+                border-radius: 5px;
+                border: 0;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .section{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+        
+        .content {
+            display: flex;
+            justify-content: center;
+            width: 68%;
+            height: 100px;
+            margin: 40px 0;
+            background:gray;
+            border-radius: 5px;
+
+            span {
+                height: 100%;
+                display: flex;
+                color: white;
+                justify-content: center;
+                align-items: center;
+                font-size: 18px;
+            }
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 68%;
+            margin-bottom:3rem;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 380px;
+        }
+
+        .card-body{
+            margin:20px;
+            width: 80%;
+        }
+
+        .card-footer{
+            border-top: 1px solid #ccc;
+            border:0 0 5px 5px;   
+            width: 100%;
+            padding:10px;
+
+            button {
+                width: 30%;
+                height: 35px;
+                font-size: 16px;
+                background: rgb(0, 102, 255);
+                color: white;
+                border-radius: 5px;
+                border: 0;
+                margin-left:10px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100px;
+            background: #222121;
+
+            span {
+                color:white;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="nav">
+        <div class="star"><a href="https://getbootstrap.com/">Start Bootstrap</a></div>
+        <div class="end">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="atricle">
+            <img src="https://picsum.photos/900/400/?random=10">
+            <div class="info">
+                <h1>Business Name or Taline</h1>
+                <span>This is template that is great for small businesses. it doesn't
+                    have too much fancy flare to it,but it makes a great use of the
+                    standard Bootstrap core components. Feel free to use this
+                    template for any project you want!
+                </span>
+                <a href="#"><button>Call to Action!</button></a>
+            </div>
+        </div>
+        <div class="section">
+            <div class="content">
+                <span>This call to action card is a great place to showcase some ipmortant
+                    information or display a clever tagline!
+                </span>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="card">
+                    <div class="card-body">
+                        <h1>Card One</h1>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore reprehenderit error,
+                            aliquam et
+                            perferendis id consectetur eius minus. Doloremque aut magnam nulla.</span>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#"><button>More info</button></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h1>Card Two</h1>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ipsam beatae, doloremque laborum cum voluptatibus? Sapiente error inventore aperiam, id distinctio temporibus reprehenderit ipsam odit.</span>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#"><button>More info</button></a>
+                    </div>
+                </div>
+                    <div class="card">
+                    <div class="card-body">
+                        <h1>Card Three</h1>
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore reprehenderit error,
+                            aliquam et
+                            perferendis id consectetur eius minus. Doloremque aut magnam nulla.</span>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#"><button>More info</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <span>copyright &copy; Your Website 2023</span>
+    </div>
+
+</body>
+
+</html>
